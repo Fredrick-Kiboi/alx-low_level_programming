@@ -1,3 +1,4 @@
+File Edit Options Buffers Tools C Help
 #include <stdio.h>
 
 /**
@@ -22,3 +23,4 @@ int main(void)
 
   return (0);
 }
+
