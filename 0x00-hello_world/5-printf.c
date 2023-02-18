@@ -1,10 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - A C program that prints a statement with printf followed by a new line
+ * main - C program that prints a statement with printf followed by a new line
  *
  * You are not allowed to use the function puts
- * 
  * Return: Always 0 (success)
  */
 
