@@ -3,8 +3,7 @@
 #include <stdio.h>
 
 /*
- * Description - It checks if n is positive or negative
- * 
+ * main - It checks if n is positive or negative
  * Return - 0 if successful, otherwise 1
  */
 
