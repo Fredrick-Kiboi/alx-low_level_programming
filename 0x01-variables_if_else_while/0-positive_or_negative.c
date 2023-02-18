@@ -1,10 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
-/*
- * main - It checks if n is positive or negative
- * Return - 0 if successful, otherwise 1
+/**
+ * main - It checks if n is positive, zero or negative
+ * Return - Always 0 (success)
  */
 int main(void)
 {
