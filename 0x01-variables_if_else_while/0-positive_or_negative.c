@@ -6,7 +6,6 @@
  * main - It checks if n is positive or negative
  * Return - 0 if successful, otherwise 1
  */
-
 int main(void)
 {
 	int n;
