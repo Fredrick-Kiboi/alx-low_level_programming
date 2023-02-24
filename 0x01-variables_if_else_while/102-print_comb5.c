@@ -18,26 +18,25 @@
 
 int main(void)
 {
-	int num1;
-	int num2;
+	int a;
+	int b;
 
-	for (num1 = 0; num1 <= 99; num1++)
+	for (a = 0; a <= 99; a++)
 	{
-		for (num2 = 0; num2 <= 99; num2++)
+		for (b = 0; b <= 99; b++)
 		{
-			if (num1 < num2)
+			if (a < b)
 			{
-				if (num1 >= 0 && num2 > 1)
+				if (a >= 0 && b > 1)
 				{
 					putchar(',');
 					putchar(' ');
 				}
-
-				putchar((num1 / 10) + 0x30);
-				putchar((num1 % 10) + 0x30);
+				putchar((a / 10) + '0');
+				putchar((a % 10) + '0');
 				putchar(' ');
-				putchar((num2 / 10) + 0x30);
-				putchar((num2 % 10) + 0x30);
+				putchar((b / 10) + '0');
+				putchar((b % 10) + '0');
 			}
 		}
 	}
