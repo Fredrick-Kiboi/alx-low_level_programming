@@ -33,7 +33,7 @@ void times_table(void)
 					_putchar(mul + '0');
 				}
 				if (colm != 9 && colm != 0)
-					_putchar('.');
+					_putchar(',');
 			}
 			else if (mul > 9)
 			{
