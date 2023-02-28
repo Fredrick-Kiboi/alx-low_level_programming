@@ -16,7 +16,7 @@ void print_rev(char *s)
 	{
 		len += 1;
 	}
-	if (len == 0)
+	if (*s == '\0')
 	{
 		_putchar('\0');
 	}
