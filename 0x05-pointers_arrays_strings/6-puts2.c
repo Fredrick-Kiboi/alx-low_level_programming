@@ -6,7 +6,7 @@
  *
  * Description:
  * Prototype: void puts2(char *str);
- * @str - the string to print
+ * @str: the string to print
  *
  * Return: void
  */
