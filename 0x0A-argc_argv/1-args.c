@@ -2,7 +2,7 @@
 
 /**
  * main - print number of arguments, followed by a new line
- * @argc: int 
+ * @argc: int
  * @argv: list
  * Return: 0
  */
