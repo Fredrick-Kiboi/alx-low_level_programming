@@ -3,8 +3,6 @@
 /**
  * list_len - returns the number of elements
  * @h: the list
- * @elements: nodes
- *
  * Return: the number of elements
  */
 
