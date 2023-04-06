@@ -1,8 +1,7 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * binary_to_unit - function that converts a binary number ot an unsigned int
+ * binary_to_uint - function that converts a binary number ot an unsigned int
  * Prototype: unsigned int binary_to_uint(const char *b);
  * @b: pointer to a string of 0 and 1 chars
  *
@@ -13,41 +12,32 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	int i = 0;
-	unsigned int num = 0;
-	int len = 0;
+	int a, current, pow, len, result = 0, i, n;
 
-	while (b[i] != '\0')
+	for (len = 0; b[len] != '\0'; len++)
 	{
-		i++;
-		len += 1;
-		return (len);
+		;
 	}
 
-	if (b[0] == '\0')
-		return(0);
-
-	for (; b[i] != '\0'; i++)
+	if (b == NULL)
 	{
-		if (b[i] != '1' || b[i] != '0')
-			return(0);
+		return (0);
 	}
-	
-	while (b[i] != '\0')
+
+	for (a = 0; b[a] != '\0'; a++)
 	{
-		if (b[i] == '1')
-			num += (1<<(len -1));
-		len--;
-		i++;
+		pow = 1;
+		current = len - a - 1;
+		if (b[a] != '1' && b[a] != '0')
+		{
+			return (0);
+		}
+		for (i = 0; i < current; i++)
+		{
+			pow *= 2;
+		}
+		n = (((b[a]) - 48) * pow);
+		result += n;
 	}
-	return (num);
-}
-
-int main(void)
-{
-	unsigned int n;
-
-	n = binary_to_uint("101");
-	printf("%u\n", n);
-	return(0);
+	return (result);
 }
