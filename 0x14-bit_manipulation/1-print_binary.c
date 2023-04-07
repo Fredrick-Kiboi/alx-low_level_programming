@@ -52,3 +52,5 @@ int for_print_binary(unsigned long int n)
 
 	rightmost = isEven(n);
 	:
+}
+
