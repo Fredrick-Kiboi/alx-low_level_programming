@@ -1,10 +1,10 @@
 #include "main.h"
+
 /**
- * get_bit - function that returns the value of a bit at a given index
- *
- * @n: the number
- * @index: the index
- * Return: value of a bit
+ * isEven - check for even numbers
+ * Description:
+ * @num: the number
+ * Return: 0 if even and 1 if not
  */
 
 int isEven(int num)
@@ -15,15 +15,30 @@ int isEven(int num)
 		return (1);
 }
 
+/**
+ * get_bit - function that returns the value of a bit at a given index
+ *
+ * @n: the number
+ * @index: the index
+ * Return: value of a bit
+ */
+
 int get_bit(unsigned long int n, unsigned int index)
 {
 	long int b, i = 0;
-  
-        while (i < index)
-        {
-                n >>= 1;
-                b = isEven(n);
-                i++;
-        }
-	return(b);
+	
+	if (!(n))
+	{
+		return (-1);
+	}
+	else
+	{
+		while (i < index)
+		{
+			n >>= 1;
+			i++;
+		}
+		b = isEven(n);
+	}
+	return (b);
 }
