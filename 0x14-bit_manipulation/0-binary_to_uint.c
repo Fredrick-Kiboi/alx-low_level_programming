@@ -12,32 +12,29 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	int a, current, pow, len, result = 0, i, n;
+	int i, len, result = 0;
 
 	for (len = 0; b[len] != '\0'; len++)
 	{
 		;
 	}
 
-	if (b == NULL)
+	if (b[0] == '\0')
 	{
 		return (0);
 	}
 
-	for (a = 0; b[a] != '\0'; a++)
+	for (i = 0; b[i] != '\0'; i++)
 	{
-		pow = 1;
-		current = len - a - 1;
-		if (b[a] != '1' && b[a] != '0')
+		if (b[i] != '1' && b[i] != '0')
 		{
 			return (0);
 		}
-		for (i = 0; i < current; i++)
+
+		if (b[i] == '1')
 		{
-			pow *= 2;
+			result += (1 << (len - i - 1));
 		}
-		n = (((b[a]) - 48) * pow);
-		result += n;
 	}
 	return (result);
 }
