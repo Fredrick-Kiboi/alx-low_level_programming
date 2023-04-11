@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * flip-bits - number of different bits between two numbers
+ * flip_bits - number of different bits between two numbers
  * @n: first number
  * @m: second number
  *
