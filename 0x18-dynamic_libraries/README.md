@@ -44,7 +44,7 @@ char *_strstr(char *haystack, char *needle); <br>
 <br>
 1. Without libraries what have we? We have no past and no future
 <br>
-*mandatory*
+* mandatory *
 <br>
 
 - Create a script that creates a dynamic library called liball.so from all the .c files that are in the current directory.
