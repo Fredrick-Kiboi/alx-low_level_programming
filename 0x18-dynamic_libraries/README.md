@@ -13,10 +13,10 @@
 *Basic usage nm, ldd, ldconfig
 
 
-###Tasks
-0. A library is not a luxury but one of the necessities of life
-mandatory
-Create the dynamic library libdynamic.so containing all the functions listed below:int _putchar(char c);
+### Tasks
+- 0. A library is not a luxury but one of the necessities of life
+- mandatory
+- Create the dynamic library libdynamic.so containing all the functions listed below:int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
 int _abs(int n);
