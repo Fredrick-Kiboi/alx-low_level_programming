@@ -73,4 +73,31 @@ Copy code
   *
   * usage: ./gm n1 n2 n3 n4 n5 bonus
 ```
-You can’t modify the program
+- You can’t modify the program gm itself as Master Sysadmin Sylvain (MSS) always checks its MD5 before running it
+- The system is an Linux Ubuntu 16.04
+- The server has internet access
+- Our mole will be only able to run two commands from a shell script, without being detected by MSS
+- Your shell script should be maximum 3 lines long. You are not allowed to use ;, &&, ||, |, ` (it would be detected by MSS), and have a maximum of two commands
+- Our mole has only the authorization to upload one file on the server. It will be your shell script
+- Our mole will run your shell script this way: mss@gm_server$ . ./101-make_me_win.sh
+- Our mole will run your shell script from the same directory containing the program gm, exactly 98 seconds before MSS runs gm with my numbers: `./gm 9 8 10 24 75 9`
+- MSS will use the same terminal and session than our mole
+- Before running the gm program, MSS always check the content of the directory
+- MSS always exit after running the program `gm`
+TL;DR; This is what is going to happen
+
+```c
+mss@gm_server$ . ./101-make_me_win.sh
+mss@gm_server$ rm 101-make_me_win.sh
+mss@gm_server$ ls -la
+. .. gm
+mss@gm_server$ history -c
+mss@gm_server$ clear
+mss@gm_server$ ls -la
+. .. gm
+mss@gm_server$ md5sum gm
+d52e6c18e0723f5b025a75dea19ef365  gm
+mss@gm_server$ ./gm 9 8 10 24 75 9
+--> Please make me win!
+mss@gm_server$ exit
+```
