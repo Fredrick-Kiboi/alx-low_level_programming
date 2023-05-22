@@ -84,8 +84,7 @@ Copy code
 - MSS will use the same terminal and session than our mole
 - Before running the gm program, MSS always check the content of the directory
 - MSS always exit after running the program `gm`
-- TL;DR; This is what is going to happen
-
+<br>- TL;DR; This is what is going to happen
 ```c
 mss@gm_server$ . ./101-make_me_win.sh
 mss@gm_server$ rm 101-make_me_win.sh
