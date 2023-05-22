@@ -40,28 +40,29 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
+```
+
 If you haven’t coded all of the above functions, create empty ones with the right prototype.
 Don’t forget to push your main.h file to your repository, containing at least all the prototypes of the above functions.
-1. Without libraries, what have we? We have no past and no future
-mandatory
+#### 1. Without libraries, what have we? We have no past and no future
+*mandatory*
 
 Create a script that creates a dynamic library called liball.so from all the .c files that are in the current directory.
 
-2. Let's call C functions from Python
-advanced
+#### 2. Let's call C functions from Python
+*advanced*
 
 I know, you’re missing C when coding in Python. So let’s fix that!
 
 Create a dynamic library that contains C functions that can be called from Python. See the example for more details.
 
-3. Code injection: Win the Giga Millions!
-advanced
+#### 3. Code injection: Win the Giga Millions!
+*advanced*
 
 I bought a ticket for the Giga Millions and chose these numbers: 9, 8, 10, 24, 75 + 9. If you could run two commands on the same server where the Giga Millions program runs, could you make me win the Jackpot?
 
 Our mole got us a copy of the program; you can download it here. Our mole also gave us a piece of documentation:
-
-arduino
+```c
 Copy code
 /* Giga Millions program
   * Players may pick six numbers from two separate pools of numbers:
@@ -71,4 +72,5 @@ Copy code
   * Your chances to win the jackpot are 1 in 258,890,850
   *
   * usage: ./gm n1 n2 n3 n4 n5 bonus
-You can’t modify the program `
+```
+You can’t modify the program
