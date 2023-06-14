@@ -34,7 +34,7 @@
 - All your header files should be include guarded
 
 ## More Info
-### ata Structures
+### Data Structures
 *Please use these data structures for this project:*
 ```C
 /**
@@ -75,10 +75,16 @@ typedef struct hash_table_s
   - Note that all dictionaries are not implemented using hash tables and there is a difference between a dictionary and a hash table. Read more here (not mandatory).
 
 ## Tasks
-0. >>> ht = {} <br>
+0. **>>> ht = {}** <br>
 *mandatory*
 - Write a function that creates a hash table.
   - Prototype: hash_table_t *hash_table_create(unsigned long int size);
   - where size is the size of the array
   - Returns a pointer to the newly created hash table
   - If something went wrong, your function should return NULL
+
+1. **djb2** <br>
+*mandatory*
+- Write a hash function implementing the djb2 algorithm.
+- Prototype: unsigned long int hash_djb2(const unsigned char *str);
+- You are allowed to copy and paste the function from this page
